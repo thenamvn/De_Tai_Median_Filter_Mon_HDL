@@ -266,7 +266,7 @@ module median_filter_unit (
 
     // Next state logic
 
-    always @(state_w or counter_i_w or counter_j_w or valid_bubble_sort_w or height_w or width_w) begin
+    always @(state_w or start_w or counter_i_w or counter_j_w or valid_bubble_sort_w or height_w or width_w) begin
         case (state_w)
             IDLE: begin
                 if (start_w) begin
