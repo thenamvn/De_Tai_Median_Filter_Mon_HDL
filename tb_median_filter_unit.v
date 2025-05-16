@@ -30,7 +30,7 @@ module tb_median_filter_unit (
     reg [`BIT_WIDTH-1:0] read_file_out_mem [0:238219];
 
     initial begin
-        $readmemh("/home/ntnhacker/Downloads/De_Tai_Median_Filter_Mon_HDL/noisyimg.txt", read_file_mem);
+        $readmemh("C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\noisyimg.txt", read_file_mem);
     end
 
     integer i, f_out;
@@ -77,7 +77,7 @@ module tb_median_filter_unit (
             addra_i = 2'b01 << 18;
         end
         #(10*CLK_PERIOD);
-        f_out = $fopen("/home/ntnhacker/Downloads/De_Tai_Median_Filter_Mon_HDL/removed_noisyimg.txt", "w");
+        f_out = $fopen("C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\removed_noisyimg.txt", "w");
         for (i = 0; i < 238220; i = i + 1) begin
             #(CLK_PERIOD);
             ena_i = 1;
