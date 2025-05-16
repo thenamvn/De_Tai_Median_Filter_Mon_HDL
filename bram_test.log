@@ -1,0 +1,213 @@
+BRAM Test Log
+------------
+
+Test 1: Write and Read Pattern
+Address: 100, Data: 5a (Expected: 0)
+ERROR: Data mismatch at address 100: Expected 0, Got 5a
+Address: 100, Data: 5d (Expected: 1)
+ERROR: Data mismatch at address 100: Expected 1, Got 5d 
+Address: 100, Data: 60 (Expected: 2)
+ERROR: Data mismatch at address 100: Expected 2, Got 60
+Address: 100, Data: 0 (Expected: 3)
+ERROR: Data mismatch at address 100: Expected 3, Got 0
+Address: 100, Data: 0 (Expected: 4)
+ERROR: Data mismatch at address 100: Expected 4, Got 0
+Address: 100, Data: 1 (Expected: 5)
+ERROR: Data mismatch at address 100: Expected 5, Got 1
+Address: 100, Data: 2 (Expected: 6)
+ERROR: Data mismatch at address 100: Expected 6, Got 2
+Address: 100, Data: 3 (Expected: 7)
+ERROR: Data mismatch at address 100: Expected 7, Got 3
+Address: 100, Data: 4 (Expected: 8)
+ERROR: Data mismatch at address 100: Expected 8, Got 4
+Address: 100, Data: 5 (Expected: 9)
+ERROR: Data mismatch at address 100: Expected 9, Got 5
+Address: 100, Data: 6 (Expected: a)
+ERROR: Data mismatch at address 100: Expected a, Got 6
+Address: 100, Data: 7 (Expected: b)
+ERROR: Data mismatch at address 100: Expected b, Got 7
+Address: 100, Data: 8 (Expected: c)
+ERROR: Data mismatch at address 100: Expected c, Got 8
+Address: 100, Data: 9 (Expected: d)
+ERROR: Data mismatch at address 100: Expected d, Got 9
+Address: 100, Data: a (Expected: e)
+ERROR: Data mismatch at address 100: Expected e, Got a
+Address: 100, Data: b (Expected: f)
+ERROR: Data mismatch at address 100: Expected f, Got b
+Address: 100, Data: c (Expected: 10)
+ERROR: Data mismatch at address 100: Expected 10, Got c
+Address: 100, Data: d (Expected: 11)
+ERROR: Data mismatch at address 100: Expected 11, Got d
+Address: 100, Data: e (Expected: 12)
+ERROR: Data mismatch at address 100: Expected 12, Got e
+Address: 100, Data: f (Expected: 13)
+ERROR: Data mismatch at address 100: Expected 13, Got f
+Address: 100, Data: 10 (Expected: 14)
+ERROR: Data mismatch at address 100: Expected 14, Got 10
+Address: 100, Data: 11 (Expected: 15)
+ERROR: Data mismatch at address 100: Expected 15, Got 11
+Address: 100, Data: 12 (Expected: 16)
+ERROR: Data mismatch at address 100: Expected 16, Got 12
+Address: 100, Data: 13 (Expected: 17)
+ERROR: Data mismatch at address 100: Expected 17, Got 13
+Address: 100, Data: 14 (Expected: 18)
+ERROR: Data mismatch at address 100: Expected 18, Got 14
+Address: 100, Data: 15 (Expected: 19)
+ERROR: Data mismatch at address 100: Expected 19, Got 15
+Address: 100, Data: 16 (Expected: 1a)
+ERROR: Data mismatch at address 100: Expected 1a, Got 16
+Address: 100, Data: 17 (Expected: 1b)
+ERROR: Data mismatch at address 100: Expected 1b, Got 17
+Address: 100, Data: 18 (Expected: 1c)
+ERROR: Data mismatch at address 100: Expected 1c, Got 18
+Address: 100, Data: 19 (Expected: 1d)
+ERROR: Data mismatch at address 100: Expected 1d, Got 19
+Address: 100, Data: 1a (Expected: 1e)
+ERROR: Data mismatch at address 100: Expected 1e, Got 1a
+Address: 100, Data: 1b (Expected: 1f)
+ERROR: Data mismatch at address 100: Expected 1f, Got 1b
+Address: 100, Data: 1c (Expected: 20)
+ERROR: Data mismatch at address 100: Expected 20, Got 1c
+Address: 100, Data: 1d (Expected: 21)
+ERROR: Data mismatch at address 100: Expected 21, Got 1d
+Address: 100, Data: 1e (Expected: 22)
+ERROR: Data mismatch at address 100: Expected 22, Got 1e
+Address: 100, Data: 1f (Expected: 23)
+ERROR: Data mismatch at address 100: Expected 23, Got 1f
+Address: 100, Data: 20 (Expected: 24)
+ERROR: Data mismatch at address 100: Expected 24, Got 20
+Address: 100, Data: 21 (Expected: 25)
+ERROR: Data mismatch at address 100: Expected 25, Got 21
+Address: 100, Data: 22 (Expected: 26)
+ERROR: Data mismatch at address 100: Expected 26, Got 22
+Address: 100, Data: 23 (Expected: 27)
+ERROR: Data mismatch at address 100: Expected 27, Got 23
+Address: 100, Data: 24 (Expected: 28)
+ERROR: Data mismatch at address 100: Expected 28, Got 24
+Address: 100, Data: 25 (Expected: 29)
+ERROR: Data mismatch at address 100: Expected 29, Got 25
+Address: 100, Data: 26 (Expected: 2a)
+ERROR: Data mismatch at address 100: Expected 2a, Got 26
+Address: 100, Data: 27 (Expected: 2b)
+ERROR: Data mismatch at address 100: Expected 2b, Got 27
+Address: 100, Data: 28 (Expected: 2c)
+ERROR: Data mismatch at address 100: Expected 2c, Got 28
+Address: 100, Data: 29 (Expected: 2d)
+ERROR: Data mismatch at address 100: Expected 2d, Got 29
+Address: 100, Data: 2a (Expected: 2e)
+ERROR: Data mismatch at address 100: Expected 2e, Got 2a
+Address: 100, Data: 2b (Expected: 2f)
+ERROR: Data mismatch at address 100: Expected 2f, Got 2b
+Address: 100, Data: 2c (Expected: 30)
+ERROR: Data mismatch at address 100: Expected 30, Got 2c
+Address: 100, Data: 2d (Expected: 31)
+ERROR: Data mismatch at address 100: Expected 31, Got 2d
+Address: 100, Data: 2e (Expected: 32)
+ERROR: Data mismatch at address 100: Expected 32, Got 2e
+Address: 100, Data: 2f (Expected: 33)
+ERROR: Data mismatch at address 100: Expected 33, Got 2f
+Address: 100, Data: 30 (Expected: 34)
+ERROR: Data mismatch at address 100: Expected 34, Got 30
+Address: 100, Data: 31 (Expected: 35)
+ERROR: Data mismatch at address 100: Expected 35, Got 31
+Address: 100, Data: 32 (Expected: 36)
+ERROR: Data mismatch at address 100: Expected 36, Got 32
+Address: 100, Data: 33 (Expected: 37)
+ERROR: Data mismatch at address 100: Expected 37, Got 33
+Address: 100, Data: 34 (Expected: 38)
+ERROR: Data mismatch at address 100: Expected 38, Got 34
+Address: 100, Data: 35 (Expected: 39)
+ERROR: Data mismatch at address 100: Expected 39, Got 35
+Address: 100, Data: 36 (Expected: 3a)
+ERROR: Data mismatch at address 100: Expected 3a, Got 36
+Address: 100, Data: 37 (Expected: 3b)
+ERROR: Data mismatch at address 100: Expected 3b, Got 37
+Address: 100, Data: 38 (Expected: 3c)
+ERROR: Data mismatch at address 100: Expected 3c, Got 38
+Address: 100, Data: 39 (Expected: 3d)
+ERROR: Data mismatch at address 100: Expected 3d, Got 39
+Address: 100, Data: 3a (Expected: 3e)
+ERROR: Data mismatch at address 100: Expected 3e, Got 3a
+Address: 100, Data: 3b (Expected: 3f)
+ERROR: Data mismatch at address 100: Expected 3f, Got 3b
+Address: 100, Data: 3c (Expected: 40)
+ERROR: Data mismatch at address 100: Expected 40, Got 3c
+Address: 100, Data: 3d (Expected: 41)
+ERROR: Data mismatch at address 100: Expected 41, Got 3d
+Address: 100, Data: 3e (Expected: 42)
+ERROR: Data mismatch at address 100: Expected 42, Got 3e
+Address: 100, Data: 3f (Expected: 43)
+ERROR: Data mismatch at address 100: Expected 43, Got 3f
+Address: 100, Data: 40 (Expected: 44)
+ERROR: Data mismatch at address 100: Expected 44, Got 40
+Address: 100, Data: 41 (Expected: 45)
+ERROR: Data mismatch at address 100: Expected 45, Got 41
+Address: 100, Data: 42 (Expected: 46)
+ERROR: Data mismatch at address 100: Expected 46, Got 42
+Address: 100, Data: 43 (Expected: 47)
+ERROR: Data mismatch at address 100: Expected 47, Got 43
+Address: 100, Data: 44 (Expected: 48)
+ERROR: Data mismatch at address 100: Expected 48, Got 44
+Address: 100, Data: 45 (Expected: 49)
+ERROR: Data mismatch at address 100: Expected 49, Got 45
+Address: 100, Data: 46 (Expected: 4a)
+ERROR: Data mismatch at address 100: Expected 4a, Got 46
+Address: 100, Data: 47 (Expected: 4b)
+ERROR: Data mismatch at address 100: Expected 4b, Got 47
+Address: 100, Data: 48 (Expected: 4c)
+ERROR: Data mismatch at address 100: Expected 4c, Got 48
+Address: 100, Data: 49 (Expected: 4d)
+ERROR: Data mismatch at address 100: Expected 4d, Got 49
+Address: 100, Data: 4a (Expected: 4e)
+ERROR: Data mismatch at address 100: Expected 4e, Got 4a
+Address: 100, Data: 4b (Expected: 4f)
+ERROR: Data mismatch at address 100: Expected 4f, Got 4b
+Address: 100, Data: 4c (Expected: 50)
+ERROR: Data mismatch at address 100: Expected 50, Got 4c
+Address: 100, Data: 4d (Expected: 51)
+ERROR: Data mismatch at address 100: Expected 51, Got 4d
+Address: 100, Data: 4e (Expected: 52)
+ERROR: Data mismatch at address 100: Expected 52, Got 4e
+Address: 100, Data: 4f (Expected: 53)
+ERROR: Data mismatch at address 100: Expected 53, Got 4f
+Address: 100, Data: 50 (Expected: 54)
+ERROR: Data mismatch at address 100: Expected 54, Got 50
+Address: 100, Data: 51 (Expected: 55)
+ERROR: Data mismatch at address 100: Expected 55, Got 51
+Address: 100, Data: 52 (Expected: 56)
+ERROR: Data mismatch at address 100: Expected 56, Got 52
+Address: 100, Data: 53 (Expected: 57)
+ERROR: Data mismatch at address 100: Expected 57, Got 53
+Address: 100, Data: 54 (Expected: 58)
+ERROR: Data mismatch at address 100: Expected 58, Got 54
+Address: 100, Data: 55 (Expected: 59)
+ERROR: Data mismatch at address 100: Expected 59, Got 55
+Address: 100, Data: 56 (Expected: 5a)
+ERROR: Data mismatch at address 100: Expected 5a, Got 56
+Address: 100, Data: 57 (Expected: 5b)
+ERROR: Data mismatch at address 100: Expected 5b, Got 57
+Address: 100, Data: 58 (Expected: 5c)
+ERROR: Data mismatch at address 100: Expected 5c, Got 58
+Address: 100, Data: 59 (Expected: 5d)
+ERROR: Data mismatch at address 100: Expected 5d, Got 59
+Address: 100, Data: 5a (Expected: 5e)
+ERROR: Data mismatch at address 100: Expected 5e, Got 5a
+Address: 100, Data: 5b (Expected: 5f)
+ERROR: Data mismatch at address 100: Expected 5f, Got 5b
+Address: 100, Data: 5c (Expected: 60)
+ERROR: Data mismatch at address 100: Expected 60, Got 5c
+Address: 100, Data: 5d (Expected: 61)
+ERROR: Data mismatch at address 100: Expected 61, Got 5d
+Address: 100, Data: 5e (Expected: 62)
+ERROR: Data mismatch at address 100: Expected 62, Got 5e
+Address: 100, Data: 5f (Expected: 63)
+ERROR: Data mismatch at address 100: Expected 63, Got 5f
+
+Test 2: Large Addresses
+Address 0x10000: 61 (Expected: 0xA5)
+Address 0x1FFFF: 62 (Expected: 0x5A)
+
+Test 3: Enable/Disable Test
+Address 0x100 after enable test: a5 (should be 0xFF)
+
+BRAM Test Complete

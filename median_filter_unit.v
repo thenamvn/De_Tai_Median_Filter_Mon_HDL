@@ -260,7 +260,7 @@ module median_filter_unit (
             state_r <= IDLE;
         end
         else begin
-            state_r <= next_state_r;
+            state_r <= next_state_w;
         end
     end
 
@@ -297,11 +297,9 @@ module median_filter_unit (
             end
         endcase
     end
-
-
     // Output control logic
 
-    always @(state_w) begin
+    always @(state_w or counter_window_w or valid_bubble_sort_w or counter_j_w or width_w) begin
         case (state_w) 
             IDLE: begin
                 counter_i_clear_r           = 1'b1;
@@ -735,10 +733,10 @@ module counter_10_bit (
             end
             else begin // Not clear_i
                 if (increment_i) begin
-                    count_r <= count_r + 10'd1; // FIX: Increment the counter
+                    count_r <= count_r + 10'b1; // Increment the counter (This was already correct)
                 end
                 else begin // Not increment_i (and not clear_i)
-                    count_r <= count_r; // Hold current value (count_o would also work as it's count_r)
+                    count_r <= count_o; // Hold current value (count_o would also work as it's count_r)
                 end
             end
         end
@@ -769,10 +767,10 @@ module counter_4_bit (
             end
             else begin // Not clear_i
                 if (increment_i) begin
-                    count_r <= count_r + 4'd1; // Increment the counter (This was already correct)
+                    count_r <= count_r + 4'b1; // Increment the counter (This was already correct)
                 end
                 else begin // Not increment_i (and not clear_i)
-                    count_r <= count_r; // Hold current value (count_o would also work as it's count_r)
+                    count_r <= count_o; // Hold current value (count_o would also work as it's count_r)
                 end
             end
         end
