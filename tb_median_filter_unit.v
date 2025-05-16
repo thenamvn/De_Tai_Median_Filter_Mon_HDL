@@ -9,7 +9,7 @@ module tb_median_filter_unit (
     reg [`MODE_ADDR_WIDTH+`ADDR_WIDTH-1:0] addra_i;
     reg wea_i;
     reg ena_i;
-    reg [`FULL_BIT_WIDTH-1:0] douta_o;
+    wire [`FULL_BIT_WIDTH-1:0] douta_o;
 
 
 

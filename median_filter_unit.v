@@ -714,7 +714,7 @@ endmodule
 
 module counter_10_bit (
     input   wire            CLK,
-    input   wire            RST,
+    input   wire            RST,         // Active-low asynchronous reset
     input   wire            increment_i,
     input   wire            clear_i,
     output  wire     [9:0]  count_o
@@ -722,22 +722,23 @@ module counter_10_bit (
 
     reg     [9:0] count_r;
 
+    // Assign the registered count value to the output
     assign count_o = count_r;
 
     always @(posedge CLK or negedge RST) begin
-        if(~RST) begin
+        if(~RST) begin // Active-low asynchronous reset
             count_r <= 10'b0;
         end
-        else begin
-            if (clear_i) begin
+        else begin // Clocked behavior (RST is high)
+            if (clear_i) begin // Synchronous clear has priority
                 count_r <= 10'b0;
             end
-            else begin
+            else begin // Not clear_i
                 if (increment_i) begin
-                    count_r <= count_o;
+                    count_r <= count_r + 10'd1; // FIX: Increment the counter
                 end
-                else begin
-                    count_r <= count_o;
+                else begin // Not increment_i (and not clear_i)
+                    count_r <= count_r; // Hold current value (count_o would also work as it's count_r)
                 end
             end
         end
@@ -747,7 +748,7 @@ endmodule
 
 module counter_4_bit (
     input   wire            CLK,
-    input   wire            RST,
+    input   wire            RST,         // Active-low asynchronous reset
     input   wire            increment_i,
     input   wire            clear_i,
     output  wire     [3:0]  count_o
@@ -755,22 +756,23 @@ module counter_4_bit (
 
     reg     [3:0] count_r;
 
+    // Assign the registered count value to the output
     assign count_o = count_r;
 
     always @(posedge CLK or negedge RST) begin
-        if(~RST) begin
+        if(~RST) begin // Active-low asynchronous reset
             count_r <= 4'b0;
         end
-        else begin
-            if (clear_i) begin
+        else begin // Clocked behavior (RST is high)
+            if (clear_i) begin // Synchronous clear has priority
                 count_r <= 4'b0;
             end
-            else begin
+            else begin // Not clear_i
                 if (increment_i) begin
-                    count_r <= count_r + 4'd1;
+                    count_r <= count_r + 4'd1; // Increment the counter (This was already correct)
                 end
-                else begin
-                    count_r <= count_o;
+                else begin // Not increment_i (and not clear_i)
+                    count_r <= count_r; // Hold current value (count_o would also work as it's count_r)
                 end
             end
         end
