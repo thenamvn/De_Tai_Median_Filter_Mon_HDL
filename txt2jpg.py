@@ -52,12 +52,16 @@ def txt_to_jpg(txt_filepath, jpg_filepath, width, height):
 if __name__ == '__main__':
     # --- Cấu hình ---
     input_txt_file = "C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\removed_noisyimg.txt"
+    noisy_img_file = "C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\noisyimg.txt"
     output_jpg_file = "C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\removed_noisyimg.jpg"
+    noise_img_jpg_file = "C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\noisyimg.jpg"
     image_width = 430  # Chiều rộng hình ảnh từ Verilog
     image_height = 554 # Chiều cao hình ảnh từ Verilog
     # ------------------
 
     txt_to_jpg(input_txt_file, output_jpg_file, image_width, image_height)
+    # Nếu bạn muốn chuyển đổi tệp văn bản chứa hình ảnh nhiễu thành JPG
+    txt_to_jpg(noisy_img_file, noise_img_jpg_file, image_width, image_height)
 
     # Ví dụ khác nếu bạn có file gốc (noisy)
     # input_noisy_txt_file = "C:\\Users\\Administrator\\Desktop\\De_Tai_Median_Filter_Mon_HDL\\noisyimg.txt"

@@ -129,7 +129,7 @@ module  bubble_sort_unit (
                 end
             end
             SORT: begin
-                if((count_i_w == 3'd7) && (count_j_w == 3'd0)) begin
+                if(count_i_w == 3'd7 && count_j_w == 3'd0) begin
                     next_state_r = DONE;
                 end
                 else begin
@@ -152,7 +152,7 @@ module  bubble_sort_unit (
 
     // Output control logic
 
-    wire [3:0] last_j_w;
+    wire [2:0] last_j_w;
 
     assign last_j_w = 3'd7 - count_i_w;
 
@@ -169,7 +169,7 @@ module  bubble_sort_unit (
 
     assign  init_input_w = init_input_r;
 
-    always @(state_w or count_i_w or last_j_w) begin
+    always @(state_w or count_i_w or count_j_w or last_j_w) begin
         case(state_w) 
             IDLE: begin
                 valid_r             = 1'b0;
