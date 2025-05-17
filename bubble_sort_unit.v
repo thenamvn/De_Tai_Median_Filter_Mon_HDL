@@ -169,7 +169,7 @@ module  bubble_sort_unit (
 
     assign  init_input_w = init_input_r;
 
-    always @(state_w or count_i_w or count_j_w or last_j_w) begin
+    always @(state_w or count_j_w or last_j_w) begin
         case(state_w) 
             IDLE: begin
                 valid_r             = 1'b0;

@@ -56,12 +56,12 @@ module tb_bubble_sort_unit(
     parameter CLK_PERIOD = 10;
     
     // Function to display messages
-    task display;
-        input [1000:0] message;
-        begin
-            $display(message);
-        end
-    endtask
+    // task display;
+    //     input [1000:0] message;
+    //     begin
+    //         $display(message);
+    //     end
+    // endtask
     
     always #(CLK_PERIOD/2) begin
         CLK = ~CLK;
@@ -86,7 +86,7 @@ module tb_bubble_sort_unit(
 
         $display("Input data: %d %d %d %d %d %d %d %d %d", in_data0_i, in_data1_i, in_data2_i, in_data3_i, in_data4_i, in_data5_i, in_data6_i, in_data7_i, in_data8_i);
 
-        #(CLK_PERIOD) RST = 1'b1;
+        #(CLK_PERIOD*200) RST = 1'b1;
         #(CLK_PERIOD) start_i = 1'b1;
         #(CLK_PERIOD) start_i = 1'b0;
 
@@ -95,7 +95,7 @@ module tb_bubble_sort_unit(
         end
 
         $display("Output data: %d %d %d %d %d %d %d %d %d", out_data0_o, out_data1_o, out_data2_o, out_data3_o, out_data4_o, out_data5_o, out_data6_o, out_data7_o, out_data8_o);
-        #(CLK_PERIOD) $finish;
+        #(CLK_PERIOD*10) $finish;
     end
 
 endmodule
