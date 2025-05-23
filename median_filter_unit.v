@@ -190,7 +190,7 @@ module median_filter_unit (
     assign bram_wea_w   = (~sel_fsm_w) ? (wea_i & (addra_mode_w == 2'd0)) : fsm_wea_w;
     assign bram_ena_w   = (~sel_fsm_w) ? (ena_i & (addra_mode_w == 2'd0)) : fsm_ena_w;
 
-    BRAM_2p18x8b bram_2p18x8b_inst(
+    BRAM_2p18x8b_0 bram_2p18x8b_inst(
         .clka(CLK),
         .wea(bram_wea_w & (~sel_fsm_w)),
         .ena(bram_ena_w),
@@ -199,7 +199,7 @@ module median_filter_unit (
         .douta(bram_douta_w)
     );
 
-    BRAM_2p18x8b bram_2p18x8b_out_inst(
+    BRAM_2p18x8b_0 bram_2p18x8b_out_inst(
         .clka(CLK),
         .wea(bram_wea_w),
         .ena(bram_ena_w),
