@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>BRAM_2p18x8b</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>BRAM_2p18x8b</spirit:modelName>
+      </spirit:view>
+    </spirit:views>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>BRAM_2p18x8b.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>common.vh</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+</spirit:component>
